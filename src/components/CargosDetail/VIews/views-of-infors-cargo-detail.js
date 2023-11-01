@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 import { StylesOfCargoDetailScreen } from "../Styles/styles-of-cargo-detail-screen";
-import CustomStrings, { detailDeliveryStrings } from "../../../constants/string";
+import CustomStrings, { detailDeliveryStrings, saleOrderStrings } from "../../../constants/string";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import CustomColors from "../../../constants/color";
 
@@ -25,7 +25,7 @@ function InforCargoDetail({ item }) {
         <View style={StylesOfCargoDetailScreen.box}>
             <View style={{ alignItems: 'top', flexDirection: "row" }}>
                 <MaterialCommunityIcons name="weight-kilogram" size={20} color={CustomColors.Primary_Blue} />
-                <Text style={StylesOfCargoDetailScreen.othersTextStyle}>{CustomStrings.Text_Weight_Cargo_Detail}{item.Weight} {CustomStrings.Kiogram}</Text>
+                <Text style={StylesOfCargoDetailScreen.othersTextStyle}>{item.Weight} {saleOrderStrings.Kilogram_Symbol_Text}</Text>
             </View>
 
             {item.IsTransfered === null || item.IsTransfered == false
