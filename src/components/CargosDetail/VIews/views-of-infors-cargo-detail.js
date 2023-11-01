@@ -25,7 +25,7 @@ function InforCargoDetail({ item }) {
         <View style={StylesOfCargoDetailScreen.box}>
             <View style={{ alignItems: 'top', flexDirection: "row" }}>
                 <MaterialCommunityIcons name="weight-kilogram" size={20} color={CustomColors.Primary_Blue} />
-                <Text style={StylesOfCargoDetailScreen.othersTextStyle}>{item.Weight} {saleOrderStrings.Kilogram_Symbol_Text}</Text>
+                <Text style={StylesOfCargoDetailScreen.othersTextStyle}>{item.Weight} {saleOrderStrings.Kilogram_Symbol_Text} </Text>
             </View>
 
             {item.IsTransfered === null || item.IsTransfered == false
